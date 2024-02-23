@@ -41,7 +41,7 @@ export let args: Args;
  */
 export function loadArgs(): Args {
   args = yargs
-    .usage('pino-http-send [options]')
+    .usage('pino-http-send-with-key [options]')
     .env('PINO_HTTP_SEND')
     .option('log', {
       alias: 'l',
@@ -51,7 +51,7 @@ export function loadArgs(): Args {
     })
     .option('silent', {
       type: 'boolean',
-      desc: 'silence pino-http-send logs for failures and retries',
+      desc: 'silence pino-http-send-with-key logs for failures and retries',
       default: false,
     })
     .option('method', {
