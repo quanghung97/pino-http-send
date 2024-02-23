@@ -24,7 +24,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "pino-http-send": "./dist/bin.js"
+    "pino-http-send-with-key": "./dist/bin.js"
   },
   "files": [
     "dist/",
