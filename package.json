@@ -1,6 +1,6 @@
 {
-  "name": "pino-http-send",
-  "version": "0.4.2",
+  "name": "pino-http-send-with-key",
+  "version": "0.0.1",
   "description": "",
   "keywords": [
     "pino",
@@ -8,13 +8,13 @@
     "transport",
     "http"
   ],
-  "homepage": "https://github.com/technicallyjosh/pino-http-send#readme",
+  "homepage": "https://github.com/quanghung97/pino-http-send#readme",
   "bugs": {
-    "url": "https://github.com/technicallyjosh/pino-http-send/issues"
+    "url": "https://github.com/quanghung97/pino-http-send/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/technicallyjosh/pino-http-send.git"
+    "url": "git+https://github.com/quanghung97/pino-http-send.git"
   },
   "license": "ISC",
   "author": {

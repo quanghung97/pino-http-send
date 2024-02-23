@@ -3,23 +3,19 @@
 A basic handler for [pino](https://github.com/pinojs/pino) logs that sends batches to a desired
 endpoint via HTTP or HTTPS.
 
-[![npm](https://img.shields.io/npm/v/pino-http-send.svg?style=for-the-badge)](https://npmjs.com/package/pino-http-send)
-[![Travis (.org)](https://img.shields.io/travis/technicallyjosh/pino-http-send.svg?style=for-the-badge)](https://travis-ci.org/technicallyjosh/pino-http-send)
-[![David](https://img.shields.io/david/technicallyjosh/pino-http-send.svg?style=for-the-badge)](https://david-dm.org/technicallyjosh/pino-http-send)
-
 **_Pre v1 is subject to breaking changes on minor version change._**
 
 ## Installation
 
 ```console
-$ npm i pino-http-send
+$ npm i pino-http-send-with-key
 ```
 
 ## Usage
 
 ```console
-$ pino-http-send --help
-pino-http-send [options]
+$ pino-http-send-with-key --help
+pino-http-send-with-key [options]
 
 Sending
              [string] [choices: "POST", "PUT", "PATCH", "GET"]  [default: "POST"]
@@ -61,13 +57,13 @@ _e.g. The option `batchSize` as an env var would be `PINO_HTTP_SEND_BATCH_SIZE`.
 **Example**
 
 ```console
-$ node . | pino-http-send --url=http://localhost:8080
+$ node . | pino-http-send-with-key --url=http://localhost:8080
 ```
 
 You can also do https...
 
 ```console
-$ node . | pino-http-send --url=https://myserver.com:8080
+$ node . | pino-http-send-with-key --url=https://myserver.com:8080
 ```
 
 ## Body Type
@@ -129,7 +125,7 @@ The options passed to this follow the same values as the CLI defined above.
 | config      | `string`                |                  |
 
 ```ts
-import { createWriteStream } from 'pino-http-send';
+import { createWriteStream } from 'pino-http-send-with-key';
 
 const stream = createWriteStream({
   url: 'http://localhost:8080',
