@@ -29,7 +29,7 @@ export function createBody(
 
   // default is json
   if (bodyJsonKey) {
-    return { json: { [bodyJsonKey]: logs } };
+    return { json: { [bodyJsonKey]: JSON.stringify(logs) } };
   }
 
   return { json: logs };
